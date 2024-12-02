@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superhéroes | Cultura Geek</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para íconos -->
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo de estilos externo -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Para íconos -->
 </head>
 <body>
 
 <!-- Barra de navegación -->
 <header>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Cultura Geek</h1>
+        </div>
+        <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#login">Login</a></li>
@@ -21,59 +24,90 @@
     </nav>
 </header>
 
-<!-- Sección de bienvenida -->
-<section id="inicio" class="bienvenida">
+<!-- Hero Banner -->
+<section id="inicio" class="hero" style="background: #ff5733; color: white; padding: 80px 20px; text-align: center;">
+    <h1>¡Bienvenido al mundo de los Superhéroes!</h1>
+    <p>Explora las historias épicas, descubre sus poderes y sumérgete en el universo geek.</p>
+    <a href="#galeria" class="btn btn-primary">Ver Galería</a>
+</section>
+
+<!-- Sección "Qué aprenderás" -->
+<section class="aprendizaje" style="padding: 60px; background-color: #f4f4f4;">
     <div class="container">
-        <h1>Bienvenidos a la Cultura Geek</h1>
-        <p>Explora el mundo de los superhéroes, sus historias, poderes y mucho más.</p>
+        <h2 style="text-align: center;">¿Qué encontrarás aquí?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Historias épicas</h3>
+                <p>Descubre las tramas y universos más emocionantes de tus héroes favoritos.</p>
+            </div>
+            <div class="card">
+                <h3>Poderes únicos</h3>
+                <p>Explora las habilidades y talentos que hacen especiales a cada superhéroe.</p>
+            </div>
+            <div class="card">
+                <h3>Galería de personajes</h3>
+                <p>Admira a los héroes y villanos en imágenes y descripciones detalladas.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Galería de Superhéroes -->
-<section id="galeria" class="galeria">
-    <h2>Galería de Superhéroes</h2>
-    <div class="grid">
-        <div class="item">
-            <img src="images/spiderman.jpg" alt="Superhéroe 1">
-            <p>Superhéroe 1</p>
-        </div>
-        <div class="item">
-            <img src="images/superheroes-banner.jpg" alt="Superhéroe 2">
-            <p>Superhéroe 2</p>
-        </div>
-        <div class="item">
-            <img src="images/batman.jpg" alt="Superhéroe 3">
-            <p>Superhéroe 3</p>
+<section id="galeria" class="galeria" style="padding: 40px; text-align: center;">
+    <div class="container">
+        <h2>Nuestra Galería</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/spiderman.jpg" alt="Spider-Man" style="width: 100%; border-radius: 8px;">
+                <h3>Spider-Man</h3>
+                <p>El amigable vecino de Nueva York.</p>
+            </div>
+            <div class="card">
+                <img src="images/superheroes-banner.jpg" alt="Superman" style="width: 100%; border-radius: 8px;">
+                <h3>Moon knight</h3>
+                <p>El caballero luna.</p>
+            </div>
+            <div class="card">
+                <img src="images/batman.jpg" alt="Batman" style="width: 100%; border-radius: 8px;">
+                <h3>Batman</h3>
+                <p>El caballero oscuro de Gotham.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Login y Registro -->
-<section id="login" class="form-section">
-    <h2>Iniciar Sesión</h2>
-    <form action="login.php" method="POST">
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Ingresar</button>
-    </form>
+<!-- Login -->
+<section id="login" class="form-section" style="padding: 60px; background-color: #e8f0fe;">
+    <div class="container">
+        <h2 style="text-align: center;">Inicia Sesión</h2>
+        <form action="login.php" method="POST" style="max-width: 400px; margin: auto;">
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit" class="btn">Ingresar</button>
+        </form>
+    </div>
 </section>
 
-<section id="registro" class="form-section">
-    <h2>Registro</h2>
-    <form action="registro.php" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Registrarse</button>
-    </form>
+<!-- Registro -->
+<section id="registro" class="form-section" style="padding: 60px;">
+    <div class="container">
+        <h2 style="text-align: center;">Regístrate</h2>
+        <form action="registro.php" method="POST" style="max-width: 400px; margin: auto;">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit" class="btn btn-secondary">Registrarse</button>
+        </form>
+    </div>
 </section>
 
 <!-- Pie de página -->
-<footer>
+<footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
     <p>&copy; 2024 Cultura Geek | Todos los derechos reservados</p>
-    <p>Contacto: contacto@culturageek.com</p>
+    <p>Contacto: <a href="mailto:contacto@culturageek.com" style="color: #ff5733;">contacto@culturageek.com</a></p>
 </footer>
 
 </body>
 </html>
+
 
