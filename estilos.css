@@ -1,0 +1,120 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 50px 0;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Galería */
+.galeria {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid .item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid .item p {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Formulario */
+.form-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.form-section input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}

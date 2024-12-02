@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhéroes | Cultura Geek</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para íconos -->
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#registro">Registro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sección de bienvenida -->
+<section id="inicio" class="bienvenida">
+    <div class="container">
+        <h1>Bienvenidos a la Cultura Geek</h1>
+        <p>Explora el mundo de los superhéroes, sus historias, poderes y mucho más.</p>
+    </div>
+</section>
+
+<!-- Galería de Superhéroes -->
+<section id="galeria" class="galeria">
+    <h2>Galería de Superhéroes</h2>
+    <div class="grid">
+        <div class="item">
+            <img src="images/spiderman.jpg" alt="Superhéroe 1">
+            <p>Superhéroe 1</p>
+        </div>
+        <div class="item">
+            <img src="images/superheroes-banner.jpg" alt="Superhéroe 2">
+            <p>Superhéroe 2</p>
+        </div>
+        <div class="item">
+            <img src="images/batman.jpg" alt="Superhéroe 3">
+            <p>Superhéroe 3</p>
+        </div>
+    </div>
+</section>
+
+<!-- Login y Registro -->
+<section id="login" class="form-section">
+    <h2>Iniciar Sesión</h2>
+    <form action="login.php" method="POST">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+    </form>
+</section>
+
+<section id="registro" class="form-section">
+    <h2>Registro</h2>
+    <form action="registro.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 Cultura Geek | Todos los derechos reservados</p>
+    <p>Contacto: contacto@culturageek.com</p>
+</footer>
+
+</body>
+</html>
+
